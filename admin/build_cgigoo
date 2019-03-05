@@ -1,0 +1,9 @@
+#!/bin/sh
+################################################
+# build cgigoo.cgi using build_cgi
+#
+# author:  mgill 
+# created: Wed Feb 14 08:16:03 EST 2018
+################################################
+#
+build_cgi cgigoo.cgi cgigoo.cpp

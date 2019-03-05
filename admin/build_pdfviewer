@@ -1,0 +1,9 @@
+#!/bin/sh
+################################################
+# build pdfviewer.cgi using build_cgi
+#
+# author:  mgill 
+# created: Tue Feb 20 11:37:03 EST 2018
+################################################
+#
+build_cgi pdfviewer.cgi pdfviewer.cpp

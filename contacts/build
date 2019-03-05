@@ -1,0 +1,6 @@
+#!/bin/sh
+######################################
+# build contact.cgi using build_cgi
+#######################################
+#
+build_cgi contact.cgi contact.cpp

@@ -1,0 +1,9 @@
+#!/bin/sh
+################################################
+# build upload.cgi using build_cgi
+#
+# author:  megan 
+# created: Thu Apr 5 17:00:41 EDT 2018
+################################################
+#
+build_cgi upload.cgi upload.cpp

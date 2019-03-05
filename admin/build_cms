@@ -1,0 +1,9 @@
+#!/bin/sh
+################################################
+# build cms.cgi using build_cgi
+#
+# author:  megan 
+# created: Thu Mar 22 17:44:48 EDT 2018
+################################################
+#
+build_cgi cms.cgi cms.cpp

@@ -1,0 +1,9 @@
+#!/bin/sh
+################################################
+# build hello.cgi using build_cgi
+#
+# author:  mgill 
+# created: Mon Feb 12 01:08:10 EST 2018
+################################################
+#
+build_cgi hello.cgi hello.cpp

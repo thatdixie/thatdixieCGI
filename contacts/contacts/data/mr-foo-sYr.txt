@@ -1,0 +1,4 @@
+name: mr foo
+email: mgill@metaqueue.net
+subject: hi
+message: blah
