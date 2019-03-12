@@ -1,14 +1,14 @@
 /* 
 ******************************************************************************************
 Title:       hello.cpp 
-Author:      mgill 
+Author:      megan 
 Created on:  Mon Feb 12 01:08:10 EST 2018
  
 Description: Implementation file for Hello class. 
  
 Modified: 
 --------- 
- 
+03-09-19     dixie   Removed login requirement   
 *******************************************************************************************
 */
 #include "hello.h" 
@@ -18,11 +18,11 @@ void Hello::cgiResponse()
     //-------------------------------------------
     // if we are not loggged in then go to login
     //-------------------------------------------
-    if(session.get("isLoggedIn") !="yes")
-    {
-        redirect("/admin/login.cgi?dest=hello.cgi");
-        return;
-    }
+    //if(session.get("isLoggedIn") !="yes")
+    //{
+    //    redirect("/admin/login.cgi?dest=hello.cgi");
+    //    return;
+    //}
 
     startHtml("hello.cgi"); 
     addHtml("<a href=/admin/>ADMIN HOME</a><br><br>");

@@ -1,9 +1,0 @@
-#!/bin/sh
-################################################
-# build phonebook.cgi using build_cgi
-#
-# author:  megan 
-# created: Thu May 3 17:56:22 EDT 2018
-################################################
-#
-build_cgi phonebook.cgi phonebook.cpp

@@ -1,14 +1,14 @@
 /* 
 ******************************************************************************************
 Title:       index.cpp 
-Author:      mgill 
+Author:      megan 
 Created on:  Sun Feb 11 22:22:36 EST 2018
  
 Description: Implementation file for Index class. 
  
 Modified: 
 --------- 
- 
+
 *******************************************************************************************
 */
 #include "index.h" 
@@ -103,7 +103,7 @@ void Index::viewFooter()
     addHtml("<div class=\"text-center\">");
     addHtml("<a href=\"/\" class=\"scrollup\"><i class=\"fa fa-angle-up fa-3x\"></i></a>");
     addHtml("</div>");
-    addHtml("Copyright &copy; 2018 Megan Williams");
+    addHtml("Copyright &copy; 2019 Megan Williams");
     addHtml("</div>");
     addHtml("<div class=\"top-bar\">");
     addHtml("<div class=\"col-lg-12\">");

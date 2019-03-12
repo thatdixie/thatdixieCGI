@@ -1,7 +1,7 @@
 /* 
 ******************************************************************************************
 Title:       login.cpp 
-Author:      mgill 
+Author:      megan 
 Created on:  Sun Feb 11 23:30:07 EST 2018
  
 Description: Implementation file for Login class. 

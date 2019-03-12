@@ -8,7 +8,7 @@ Description: Implementation file for PhoneBook class.
  
 Modified: 
 --------- 
- 
+03-09-19     dixie   Removed login requirement
 *******************************************************************************************
 */
 #include "phonebook.h" 
@@ -18,11 +18,11 @@ void PhoneBook::cgiResponse()
     //-------------------------------------------
     // if we are not loggged in then go to login
     //-------------------------------------------
-    if(session.get("isLoggedIn") !="yes")
-    {
-        redirect("/admin/login.cgi?dest=phonebook.cgi");
-        return;
-    }
+    //if(session.get("isLoggedIn") !="yes")
+    //{
+    //    redirect("/admin/login.cgi?dest=phonebook.cgi");
+    //    return;
+    //}
     //-------------------------------------------
     // The Following is the entry point to our
     // controller logic."mode" determines the
@@ -514,7 +514,7 @@ void PhoneBook::viewTopNav()
     addHtml("<div class=\"row\">");
     addHtml("<div class=\"col-md-2\">");
     addHtml("<div class=\"site-logo\">");
-    addHtml("<a href=\"index.html\" class=\"brand\">ThatDixie.com</a>");
+    addHtml("<a href=\"/\" class=\"brand\">ThatDixie.com</a>");
     addHtml("</div>");
     addHtml("</div>");					  
     addHtml("<div class=\"col-md-10\">");	 
@@ -525,9 +525,10 @@ void PhoneBook::viewTopNav()
     addHtml("</div>");
     addHtml("<div class=\"collapse navbar-collapse\" id=\"menu\">");
     addHtml("<ul class=\"nav navbar-nav navbar-right\">");
-    addHtml("<li><a href=\"/admin/\">Admin Home</a></li>");
     addHtml("<li><a href=\"/admin/phonebook.cgi\">Phonebook Home</a></li>");
-    addHtml("<li><a href=\"/admin/login.cgi?logout=yes\">Logout</a></li>");
+    addHtml("<li><a href=\"/#portfolio\">C++ Projects</a></li>");
+    addHtml("<li><a target=\"capstone\" href=\"https://github.com/thatdixie/thatdixieCGI/blob/master/admin/phonebook.cpp\">Phonebook Source</a></li>");
+    addHtml("<li><a target=\"capstone\" href=\"https://github.com/thatdixie/libdixie\">libdixie Source</a></li>");
     addHtml("</ul>");
     addHtml("</div>");
     addHtml("</div>");
@@ -547,7 +548,7 @@ void PhoneBook::viewFooter()
     addHtml("<div class=\"text-center\">");
     addHtml("<a href=\"/\" class=\"scrollup\"><i class=\"fa fa-angle-up fa-3x\"></i></a>");
     addHtml("</div>");
-    addHtml("Copyright &copy; 2018 Megan Williams");
+    addHtml("Copyright &copy; 2019 Megan Williams");
     addHtml("</div>");
     addHtml("<div class=\"top-bar\">");
     addHtml("<div class=\"col-lg-12\">");
@@ -665,20 +666,11 @@ void PhoneBook::makeHeader()
     addHeader("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">");
     addHeader("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
     addHeader("<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\">");
-    addHeader("<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\">");
     addHeader("<link rel=\"stylesheet\" href=\"/css/font-awesome.min.css\">");
-    addHeader("<link href=\"/css/animate.min.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/animate.css\" rel=\"stylesheet\" />");
     addHeader("<link href=\"/css/prettyPhoto.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/style.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/dixie.css\" rel=\"stylesheet\">");
-    addHeader("<script src=\"/js/jquery.js\"></script>");
-    addHeader("<script src=\"/js/bootstrap.min.js\"></script>");
-    addHeader("<script src=\"/js/jquery.prettyPhoto.js\"></script>");
-    addHeader("<script src=\"/js/jquery.isotope.min.js\"></script>");
-    addHeader("<script src=\"/js/wow.min.js\"></script>");
-    addHeader("<script src=\"/js/jquery.easing.min.js\"></script>");
-    addHeader("<script src=\"/js/main.js\"></script>");
 }
 
 /*

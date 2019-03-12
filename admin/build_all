@@ -1,0 +1,14 @@
+#!/bin/sh
+################################################
+# build_all
+# author:  megan 
+################################################
+#
+./build_cgigoo
+./build_cms
+./build_hello
+./build_index
+./build_login
+./build_pdfviewer
+./build_phonebook
+./build_upload

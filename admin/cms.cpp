@@ -96,7 +96,7 @@ void Cms::edit()
     //--------------------------------------
     // Get contents of section to edit
     //--------------------------------------
-    char *b = readFile(path+"/"+filename);
+    char *b = readFile(path+"/cmsdata/"+filename);
     content = string(b);
     
     startHtml("cms.cgi");

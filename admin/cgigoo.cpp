@@ -1,22 +1,22 @@
 /* 
 ******************************************************************************************
 Title:       cgigoo.cpp 
-Author:      mgill 
+Author:      megan 
 Created on:  Wed Feb 14 08:16:03 EST 2018
  
 Description: Implementation file for CgiGoo class. 
  
 Modified: 
 --------- 
- 
+03-09-19     dixie   Removed login requirement   
 *******************************************************************************************
 */
 #include "cgigoo.h" 
  
 void CgiGoo::cgiResponse() 
 { 
-    if(session.get("isLoggedIn") != "yes")
-        redirect("/admin/login.cgi?dest=cgigoo.cgi");
+    //if(session.get("isLoggedIn") != "yes")
+    //    redirect("/admin/login.cgi?dest=cgigoo.cgi");
 
     startHtml("CGI Goo");
     cgiGoo();
@@ -26,7 +26,8 @@ void CgiGoo::cgiResponse()
     
 void CgiGoo::cgiGoo()
 {
-    addHtml("<a href=/admin/>ADMIN HOME</a><br>");
+    //addHtml("<a href=/admin/>ADMIN HOME</a><br>");
+    addHtml("<br>");
     addHtml("<h1>CGI GOO</h1>");
     addHtml("<table border=\"1\" cellspacing=\"0\" cellpadding=\"10\"> ");
 
