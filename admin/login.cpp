@@ -186,20 +186,11 @@ void Login::makeHeader()
     addHeader("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">");
     addHeader("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
     addHeader("<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\">");
-    addHeader("<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\">");
     addHeader("<link rel=\"stylesheet\" href=\"/css/font-awesome.min.css\">");
-    addHeader("<link href=\"/css/animate.min.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/animate.css\" rel=\"stylesheet\" />");
     addHeader("<link href=\"/css/prettyPhoto.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/style.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/dixie.css\" rel=\"stylesheet\">");
-    addHeader("<script src=\"/js/jquery.js\"></script>");
-    addHeader("<script src=\"/js/bootstrap.min.js\"></script>");
-    addHeader("<script src=\"/js/jquery.prettyPhoto.js\"></script>");
-    addHeader("<script src=\"/js/jquery.isotope.min.js\"></script>");
-    addHeader("<script src=\"/js/wow.min.js\"></script>");
-    //    addHeader("<script src=\"/js/jquery.easing.min.js\"></script>");
-    addHeader("<script src=\"/js/main.js\"></script>");
 }
 
 string Login::getConfPath()

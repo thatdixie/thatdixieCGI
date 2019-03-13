@@ -36,14 +36,13 @@ void Index::cgiResponse()
     addHtml("<div class=\"admin-page\">");
     addHtml("<div class=\"container\">");
     addHtml("<div class=\"center\">");
-    addHtml("<h2>Administrative Login</h2>");
+    addHtml("<h2>Admin. Tools</h2>");
     addHtml("</div>");
     addHtml("<div class=\"row admin-wrap\">");
     addHtml("<div class=\"status alert alert-success\" style=\"display: none\"></div>");
     addHtml("<div class=\"wow fadeInDown\">");
     addHtml("<div class=\"col-sm-5 col-sm-offset-4\">");
-    addHtml("<h3>Hi "+session.get("username")+"! Here are your apps: ");
-    addHtml("<br>");
+    addHtml("<h3>Hi "+session.get("username")+"! Here are your apps: </h3>");
     //-----------------------------------------------
     // get list of Apps available to this admin area
     //-----------------------------------------------
@@ -135,20 +134,11 @@ void Index::makeHeader()
     addHeader("<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">");
     addHeader("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
     addHeader("<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\">");
-    addHeader("<link href=\"/css/bootstrap.min.css\" rel=\"stylesheet\">");
     addHeader("<link rel=\"stylesheet\" href=\"/css/font-awesome.min.css\">");
-    addHeader("<link href=\"/css/animate.min.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/animate.css\" rel=\"stylesheet\" />");
     addHeader("<link href=\"/css/prettyPhoto.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/style.css\" rel=\"stylesheet\">");
     addHeader("<link href=\"/css/dixie.css\" rel=\"stylesheet\">");
-    addHeader("<script src=\"/js/jquery.js\"></script>");
-    addHeader("<script src=\"/js/bootstrap.min.js\"></script>");
-    addHeader("<script src=\"/js/jquery.prettyPhoto.js\"></script>");
-    addHeader("<script src=\"/js/jquery.isotope.min.js\"></script>");
-    addHeader("<script src=\"/js/wow.min.js\"></script>");
-    //    addHeader("<script src=\"/js/jquery.easing.min.js\"></script>");
-    //    addHeader("<script src=\"/js/main.js\"></script>");
 }
 
 string Index::getConfPath()
