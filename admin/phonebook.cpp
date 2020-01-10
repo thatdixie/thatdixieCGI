@@ -343,7 +343,7 @@ void PhoneBook::viewSearchResults(PhoneContact contact)
 
 void PhoneBook::viewEditContact(PhoneContact contact)
 {
-    startHtml("phonebook.cgi"); 
+    startHtml("phonebook.cgi");
     viewTopNav();
     addHtml("<section id=\"admin\">");
     addHtml("<div class=\"admin-page\">");
@@ -548,7 +548,11 @@ void PhoneBook::viewFooter()
     addHtml("<div class=\"text-center\">");
     addHtml("<a href=\"/\" class=\"scrollup\"><i class=\"fa fa-angle-up fa-3x\"></i></a>");
     addHtml("</div>");
-    addHtml("Copyright &copy; 2019 Megan Williams");
+    addHtml("&copy;");
+    addHtml("<script type=\"text/javascript\">");
+    addHtml("document.write(new Date().getFullYear());");
+    addHtml("</script>");
+    addHtml("Megan Williams");
     addHtml("</div>");
     addHtml("<div class=\"top-bar\">");
     addHtml("<div class=\"col-lg-12\">");
