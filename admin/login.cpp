@@ -154,7 +154,11 @@ void Login::viewFooter()
     addHtml("<div class=\"text-center\">");
     addHtml("<a href=\"/\" class=\"scrollup\"><i class=\"fa fa-angle-up fa-3x\"></i></a>");
     addHtml("</div>");
-    addHtml("Copyright &copy; 2018 Megan Williams");
+    addHtml("&copy;");
+    addHtml("<script type=\"text/javascript\">");
+    addHtml("document.write(new Date().getFullYear());");
+    addHtml("</script>");
+    addHtml("Megan Williams");    
     addHtml("</div>");
     addHtml("<div class=\"top-bar\">");
     addHtml("<div class=\"col-lg-12\">");
